@@ -1,0 +1,108 @@
+/* Variables */
+:root {
+  --color-offwhite: #faf7f0;
+  --color-black: #000;
+  --color-gold: #fabc3f;
+  --color-red: red;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: var(--color-offwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Calculator Container */
+.container {
+  border-radius: 2rem;
+  width: 320px;
+  height: 450px;
+  text-align: center;
+  background-color: var(--color-black);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Display Section */
+.display {
+ /* background: rgba(255, 255, 255, 0.1); */
+ background: #ccc;
+  border-radius: 1rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  color: #000;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Buttons Section */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  color:white;
+}
+
+/* Buttons */
+button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button.gold {
+  background-color: var(--color-gold);
+  color: white;
+}
+
+button.gold:hover {
+  background-color: #d4a530;
+}
+
+button.light {
+  background-color: #666;
+  color: white;
+}
+
+button.light:hover {
+  background-color: #888;
+}
+
+button.wide {
+  grid-column: span 2;
+  border-radius: 25px;
+}
